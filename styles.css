@@ -1,0 +1,70 @@
+/* Estilização da página para dispositivos móveis */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  background-color: #d32f2f; /* Vermelho predominante */
+  color: white;
+  text-align: center;
+  padding: 1.2rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  font-size: 1.6rem; /* Tamanho ajustado */
+  margin: 0;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.8rem;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  padding: 1rem;
+  width: 100%;
+}
+
+.formulario {
+  text-align: center;
+  width: 100%;
+  max-width: 640px;
+  padding: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  background-color: #ffffff;
+}
+
+iframe {
+  width: 100%;
+  height: 600px; /* Altura ajustável */
+  border: none;
+  border-radius: 8px;
+}
+
+/* Ajustes específicos para telas menores */
+@media (max-width: 400px) {
+  header h1 {
+    font-size: 1.4rem;
+  }
+
+  iframe {
+    height: 500px; /* Ajuste altura para dispositivos menores */
+  }
+}
